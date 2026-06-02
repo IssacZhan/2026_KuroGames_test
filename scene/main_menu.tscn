@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c3bggjo20jno0"]
+
+[ext_resource type="Script" uid="uid://d14opr80mmgj0" path="res://code/main_menu.gd" id="1_3er1b"]
+
+[node name="MainMenu" type="Node2D" unique_id=558417766]
+script = ExtResource("1_3er1b")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=793309031]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=270648666]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = -66.0
+offset_right = 160.0
+offset_bottom = 158.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="CanvasLayer/Panel" unique_id=189595677]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 320.0
+offset_bottom = 96.0
+text = "play game"
+
+[node name="Button2" type="Button" parent="CanvasLayer/Panel" unique_id=1221108255]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 128.0
+offset_right = 320.0
+offset_bottom = 192.0
+text = "workshop"
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=516839862]
+offset_left = 448.00006
+offset_top = 192.0
+offset_right = 576.00006
+offset_bottom = 224.0
+scale = Vector2(5, 5)
+text = "Sokoban Test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/Panel/Button" to="." method="_on_enter_level_select"]
+[connection signal="pressed" from="CanvasLayer/Panel/Button2" to="." method="_on_enter_workshop"]

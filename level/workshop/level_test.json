@@ -1,0 +1,31 @@
+{
+  "name": "综合测试",
+  "width": 10,
+  "height": 8,
+  "floors": [
+	{
+	  "data": [
+		"WWWWWWWWWW",
+		"W   B    W",
+		"W        W",
+		"W BU     W",
+		"WPG   D  W",
+		"W      B W",
+		"W BD     W",
+        "WWWWWWWWWW"
+	  ]
+	},
+	{
+	  "data": [
+		"WWWWWWWWWW",
+		"W  B   D W",
+		"W        W",
+		"W  U  D  W",
+		"W     DG W",
+		"W      B W",
+		"W        W",
+        "WWWWWWWWWW"
+	  ]
+	}
+  ]
+}

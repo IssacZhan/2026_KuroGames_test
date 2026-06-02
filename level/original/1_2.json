@@ -1,0 +1,40 @@
+{
+	"floors": [
+		{
+			"data": [
+				"VVVVVVWWWWWVVV",
+				"VWWWWWW   WWWV",
+				"WW   W   BD WW",
+				"WP B D  B D GW",
+				"WW   W   BD WW",
+				"VWWWWWW   WWWV",
+				"VVVVVVWWWWWVVV"
+			]
+		},
+		{
+			"data": [
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV"
+			]
+		},
+		{
+			"data": [
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV",
+				"VVVVVVVVVVVVVV"
+			]
+		}
+	],
+	"height": 7.0,
+	"name": "测试 - 坑洞",
+	"width": 14.0
+}

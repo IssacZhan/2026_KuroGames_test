@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cwir2ygt0qdbm"]
+
+[ext_resource type="Script" uid="uid://bc733ejed1jsg" path="res://code/level_select.gd" id="1_jcnwc"]
+
+[node name="LevelSelect" type="Node2D" unique_id=1663253316]
+script = ExtResource("1_jcnwc")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=753152821]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=2122082024]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 118.0
+offset_bottom = 55.0
+text = "select level"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=640634860]
+offset_left = 96.0
+offset_top = 96.0
+offset_right = 1504.0
+offset_bottom = 800.0
+
+[node name="OfficialVBox" type="VBoxContainer" parent="CanvasLayer/HBoxContainer" unique_id=1005033732]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/OfficialVBox" unique_id=598287499]
+layout_mode = 2
+text = "normal levels"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/HBoxContainer/OfficialVBox" unique_id=1741393179]
+custom_minimum_size = Vector2(150, 300)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="OfficialList" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/OfficialVBox/ScrollContainer" unique_id=1234735425]
+custom_minimum_size = Vector2(150, 300)
+layout_mode = 2
+
+[node name="WorkshopVBox" type="VBoxContainer" parent="CanvasLayer/HBoxContainer" unique_id=445046838]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/WorkshopVBox" unique_id=1039310097]
+layout_mode = 2
+text = "workshop levels"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/HBoxContainer/WorkshopVBox" unique_id=2029712817]
+custom_minimum_size = Vector2(150, 300)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="WorkshopList" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/WorkshopVBox/ScrollContainer" unique_id=447430167]
+custom_minimum_size = Vector2(150, 300)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1530624767]
+offset_left = 32.0
+offset_top = 832.0
+offset_right = 192.0
+offset_bottom = 864.0
+text = "return to menu"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_back_pressed"]

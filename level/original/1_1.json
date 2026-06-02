@@ -1,0 +1,34 @@
+{
+	"floors": [
+		{
+			"data": [
+				"WWWWWWWWW",
+				"W       W",
+				"W P B G W",
+				"W       W",
+				"WWWWWWWWW"
+			]
+		},
+		{
+			"data": [
+				"VVVVVVVVV",
+				"VVVVVVVVV",
+				"VVVVVVVVV",
+				"VVVVVVVVV",
+				"VVVVVVVVV"
+			]
+		},
+		{
+			"data": [
+				"VVVVVVVVV",
+				"VVVVVVVVV",
+				"VVVVVVVVV",
+				"VVVVVVVVV",
+				"VVVVVVVVV"
+			]
+		}
+	],
+	"height": 5,
+	"name": "测试 - 逻辑",
+	"width": 9
+}

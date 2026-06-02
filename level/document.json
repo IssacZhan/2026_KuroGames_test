@@ -1,0 +1,10 @@
+{
+	"V": "void",
+	"W": "wall",
+	" ": "floor",
+	"G": "goal",
+	"1": "box_on_goal",
+	"2": "player_on_goal",
+	"D": "hole",
+	"U": "elevator"
+}

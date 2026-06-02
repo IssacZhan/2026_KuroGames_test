@@ -1,0 +1,55 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="kuro_exam_sokoban"
+run/main_scene="uid://c3bggjo20jno0"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GameLevelManager="*uid://y378cbx2r7k2"
+GameSystemManager="*uid://xuto3g1lsupv"
+CameraManager="*uid://dq70npnu53k6j"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+
+[input]
+
+ui_reset={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":82,"physical_keycode":0,"key_label":0,"unicode":114,"location":0,"echo":false,"script":null)
+]
+}
+
+[layer_names]
+
+2d_physics/layer_1="floor"
+2d_physics/layer_2="wall"
+2d_physics/layer_3="box"
+2d_physics/layer_4="elevator"
+2d_physics/layer_5="hole"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/size/viewport_height=648
+environment/size/viewport_width=1152

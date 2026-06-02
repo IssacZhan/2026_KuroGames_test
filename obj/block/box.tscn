@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bduwapla2o1yf"]
+
+[ext_resource type="Texture2D" uid="uid://clb07130xut8" path="res://sprite/object/crate.png" id="1_12hm3"]
+[ext_resource type="Script" uid="uid://bgy3v2ux8w08h" path="res://code/box.gd" id="1_mmfir"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmfir"]
+size = Vector2(32, 32)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1605072368]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_mmfir")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=372348214]
+position = Vector2(0, -9.536743e-07)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_12hm3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2058264758]
+shape = SubResource("RectangleShape2D_mmfir")
+
+[node name="up" type="RayCast2D" parent="." unique_id=606790161]
+position = Vector2(0, -16)
+target_position = Vector2(0, -16)
+collision_mask = 6
+hit_from_inside = true
+
+[node name="down" type="RayCast2D" parent="." unique_id=1450968414]
+position = Vector2(0, 16)
+target_position = Vector2(0, 16)
+collision_mask = 6
+hit_from_inside = true
+
+[node name="left" type="RayCast2D" parent="." unique_id=742311858]
+position = Vector2(-16, 0)
+target_position = Vector2(-16, 0)
+collision_mask = 6
+hit_from_inside = true
+
+[node name="right" type="RayCast2D" parent="." unique_id=1343115211]
+position = Vector2(16, 0)
+target_position = Vector2(16, 0)
+collision_mask = 6
+hit_from_inside = true

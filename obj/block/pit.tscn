@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dt1oav2cdwo2d"]
+
+[ext_resource type="Script" uid="uid://d4akjsv6rmiwt" path="res://code/pit.gd" id="1_elcfq"]
+[ext_resource type="Texture2D" uid="uid://ck6y3fd10ekqq" path="res://sprite/object/hole.png" id="1_reuyk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_elcfq"]
+size = Vector2(32, 32)
+
+[node name="Hole" type="StaticBody2D" unique_id=312911010]
+script = ExtResource("1_elcfq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1924504468]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_reuyk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1754464602]
+shape = SubResource("RectangleShape2D_elcfq")

@@ -1,0 +1,34 @@
+{
+	"floors": [
+		{
+			"data": [
+				"WWWWWWWWWWW",
+				"W         W",
+				"W P B G U W",
+				"W         W",
+				"WWWWWWWWWWW"
+			]
+		},
+		{
+			"data": [
+				"WWWWWWWWWWW",
+				"W         W",
+				"W U G B U W",
+				"W         W",
+				"WWWWWWWWWWW"
+			]
+		},
+		{
+			"data": [
+				"WWWWWWWWWWW",
+				"W         W",
+				"W U B G   W",
+				"W         W",
+				"WWWWWWWWWWW"
+			]
+		}
+	],
+	"height": 5.0,
+	"name": "测试 - 电梯",
+	"width": 11.0
+}

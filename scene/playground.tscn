@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://kyutrnljl0ow"]
+
+[ext_resource type="Script" uid="uid://oeo4wy4gwiuy" path="res://code/level_loader.gd" id="1_lj4ca"]
+
+[node name="LevelPlay" type="Node2D" unique_id=1898199493]
+script = ExtResource("1_lj4ca")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1118794707]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=558311199]
+offset_left = 96.0
+offset_top = 96.0
+offset_right = 1472.0
+offset_bottom = 768.0
+color = Color(0, 0, 0, 0.29411766)
+
+[node name="Panel_NormalPlay" type="Panel" parent="CanvasLayer" unique_id=739968776]
+offset_left = 96.0
+offset_top = 784.0
+offset_right = 240.0
+offset_bottom = 848.0
+
+[node name="Button" type="Button" parent="CanvasLayer/Panel_NormalPlay" unique_id=891124886]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 64.0
+offset_bottom = 47.0
+text = "reset"
+
+[node name="Button2" type="Button" parent="CanvasLayer/Panel_NormalPlay" unique_id=1386088668]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 16.0
+offset_right = 128.0
+offset_bottom = 47.0
+text = "exit"
+
+[node name="Panel_Playtest" type="Panel" parent="CanvasLayer" unique_id=1057018828]
+offset_left = 256.0
+offset_top = 784.0
+offset_right = 528.0
+offset_bottom = 848.0
+
+[node name="Button" type="Button" parent="CanvasLayer/Panel_Playtest" unique_id=641993644]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 16.0
+offset_right = 256.0
+offset_bottom = 47.0
+text = "return to workshop"
+
+[node name="Button2" type="Button" parent="CanvasLayer/Panel_Playtest" unique_id=1027145311]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 64.0
+offset_bottom = 47.0
+text = "reset"
+
+[connection signal="pressed" from="CanvasLayer/Panel_NormalPlay/Button" to="." method="_on_normalplay_reset"]
+[connection signal="pressed" from="CanvasLayer/Panel_NormalPlay/Button2" to="." method="_on_normalplay_exit"]
+[connection signal="pressed" from="CanvasLayer/Panel_Playtest/Button" to="." method="_on_workshop_return"]
+[connection signal="pressed" from="CanvasLayer/Panel_Playtest/Button2" to="." method="_on_normalplay_reset"]

@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://2syadn88dlbx"]
+
+[ext_resource type="Script" uid="uid://c8o48hcytnind" path="res://code/workshop.gd" id="1_navti"]
+
+[node name="Workshop" type="Node2D" unique_id=546672377]
+script = ExtResource("1_navti")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1816140611]
+
+[node name="Panel" type="Panel" parent="UI" unique_id=527268312]
+offset_left = 32.0
+offset_top = 800.0
+offset_right = 1024.0
+offset_bottom = 864.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Panel" unique_id=1525265531]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 432.0
+offset_bottom = 48.0
+alignment = 1
+
+[node name="wall" type="Button" parent="UI/Panel/HBoxContainer" unique_id=1685603229]
+layout_mode = 2
+text = "Wall"
+
+[node name="floor" type="Button" parent="UI/Panel/HBoxContainer" unique_id=1764193656]
+layout_mode = 2
+text = "Floor"
+
+[node name="box" type="Button" parent="UI/Panel/HBoxContainer" unique_id=1548986173]
+layout_mode = 2
+text = "Box"
+
+[node name="goal" type="Button" parent="UI/Panel/HBoxContainer" unique_id=761296378]
+layout_mode = 2
+text = "Goal"
+
+[node name="player" type="Button" parent="UI/Panel/HBoxContainer" unique_id=565594869]
+layout_mode = 2
+text = "Player"
+
+[node name="pit" type="Button" parent="UI/Panel/HBoxContainer" unique_id=1644619483]
+layout_mode = 2
+text = "Pit"
+
+[node name="elevator" type="Button" parent="UI/Panel/HBoxContainer" unique_id=1404024825]
+layout_mode = 2
+text = "Elevator"
+
+[node name="erase" type="Button" parent="UI/Panel/HBoxContainer" unique_id=437247815]
+layout_mode = 2
+text = "Erase"
+
+[node name="FloorButtons" type="HBoxContainer" parent="UI/Panel" unique_id=430203701]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 16.0
+offset_right = 550.0
+offset_bottom = 47.0
+
+[node name="Button" type="Button" parent="UI/Panel/FloorButtons" unique_id=1843439373]
+layout_mode = 2
+text = "F1"
+
+[node name="Button2" type="Button" parent="UI/Panel/FloorButtons" unique_id=1782975389]
+layout_mode = 2
+text = "F2"
+
+[node name="Button3" type="Button" parent="UI/Panel/FloorButtons" unique_id=1309849161]
+layout_mode = 2
+text = "F3"
+
+[node name="GhostSelector" type="HBoxContainer" parent="UI/Panel" unique_id=1314712420]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 16.0
+offset_right = 707.0
+offset_bottom = 47.0
+
+[node name="Label" type="Label" parent="UI/Panel/GhostSelector" unique_id=1400404117]
+layout_mode = 2
+text = "Ghost: "
+
+[node name="GhostOption" type="OptionButton" parent="UI/Panel/GhostSelector" unique_id=1604406713]
+layout_mode = 2
+item_count = 4
+popup/item_0/text = "Close"
+popup/item_0/id = 0
+popup/item_1/text = "F1"
+popup/item_1/id = 1
+popup/item_2/text = "F2"
+popup/item_2/id = 2
+popup/item_3/text = "F3"
+popup/item_3/id = 3
+
+[node name="TestLevel" type="Button" parent="UI/Panel" unique_id=1163490798]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 16.0
+offset_right = 798.0
+offset_bottom = 47.0
+text = "test level"
+
+[node name="Button" type="Button" parent="UI/Panel" unique_id=1656334513]
+layout_mode = 0
+offset_left = 832.0
+offset_top = 16.0
+offset_right = 959.0
+offset_bottom = 47.0
+text = "return to menu"
+
+[node name="StatusLabel" type="Label" parent="UI" unique_id=1789574062]
+offset_left = 1056.0
+offset_top = 816.0
+offset_right = 1057.0
+offset_bottom = 839.0
+
+[node name="ColorRect" type="ColorRect" parent="UI" unique_id=2033898424]
+offset_left = 96.0
+offset_top = 96.0
+offset_right = 1472.0
+offset_bottom = 768.0
+color = Color(0, 0, 0, 0.29411766)
+
+[connection signal="item_selected" from="UI/Panel/GhostSelector/GhostOption" to="." method="_on_ghost_option_selected"]
+[connection signal="pressed" from="UI/Panel/TestLevel" to="." method="_on_test_play_pressed"]
+[connection signal="pressed" from="UI/Panel/Button" to="." method="_on_return_menu_pressed"]

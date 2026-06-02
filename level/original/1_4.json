@@ -1,0 +1,37 @@
+{
+	"floors": [
+		{
+			"data": [
+				"VVVVVVVV",
+				"V   VVVV",
+				"V   VVVV",
+				"V   VVVV",
+				"V   VVVV",
+				"VVVVVVVV"
+			]
+		},
+		{
+			"data": [
+				"WWWWWWWW",
+				"W      W",
+				"W D    W",
+				"WG   U W",
+				"W      W",
+				"WWWWWWWW"
+			]
+		},
+		{
+			"data": [
+				"WWWWWWWW",
+				"W     PW",
+				"WGDB B W",
+				"W DB U W",
+				"W     DW",
+				"WWWWWWWW"
+			]
+		}
+	],
+	"height": 6.0,
+	"name": "测试 - 重力",
+	"width": 8.0
+}

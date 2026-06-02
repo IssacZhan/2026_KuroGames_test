@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://brcj3my4fvbs3"]
+
+[ext_resource type="Texture2D" uid="uid://ftbcvmdr88ut" path="res://sprite/object/floor_target.png" id="2_afkmn"]
+
+[node name="Node2D" type="Node2D" unique_id=634445325]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1089935103]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_afkmn")

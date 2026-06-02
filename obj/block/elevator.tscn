@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dnjxisf8yiopu"]
+
+[ext_resource type="Texture2D" uid="uid://cur2eb8mk0hre" path="res://sprite/object/elevator.png" id="1_tk578"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uwp0g"]
+size = Vector2(32, 32)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=463122008]
+collision_layer = 8
+collision_mask = 8
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1414919411]
+position = Vector2(0, 4.7683716e-07)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_tk578")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=208825528]
+shape = SubResource("RectangleShape2D_uwp0g")
